@@ -1,0 +1,82 @@
+.title{
+  font-size: 2rem;
+}
+
+
+.swiper_container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.swiper_item {
+  flex: 0 0 auto;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  background-color: #ddd; /* Color de fondo de cada diapositiva */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+/* Opcional: Añadir estilos adicionales para los controles de navegación */
+.swiper_prev,
+.swiper_next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: var(--hamu-primary-blue);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+
+}
+
+.swiper_prev {
+  left: 1rem;
+}
+
+.swiper_next {
+  right: 1rem;
+}
+
+
+.ribbon {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 110px;
+  height: 110px;
+  display: block;
+  overflow: hidden;
+}
+.ribbon span {
+  width: 150px;
+  height: 34px;
+  top: 20px;
+  right: -40px;
+  position: absolute;
+  display: block;
+  background: var(--hamu-primary-blue);
+  color: #333;
+  font-family: arial;
+  font-size: 18px;
+  color:white;
+  text-align: center;
+  line-height: 34px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+/***********/

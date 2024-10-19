@@ -1,0 +1,114 @@
+.subtitle,.party{
+  font-family: 'photograph_signatureregular';
+}
+.party{
+  color: #18b6f6;
+  text-shadow: 1px 1px 2px black
+}
+
+.btn_conteiner {
+  display: flex;
+  justify-content: center;
+  --color-text: #ffffff;
+  --color-outline: #18b6f6;
+  --color-shadow: #00000080;
+}
+
+.btn_content {
+  display: flex;
+  align-items: center;
+  padding: 5px 70px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 30px;
+  color: var(--color-text);
+  background: var(--hamu-primary-blue);
+  transition: 1s;
+  border-radius: 100px;
+  box-shadow: 0 0 0.2em 0 var(--hamu-primary-blue);
+}
+
+
+.btn_content:hover, .btn_content:focus {
+  transition: 0.5s;
+  -webkit-animation: btn_content 1s;
+  animation: btn_content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+  box-shadow: 0 0 0.4em 0 var(--hamu-primary-blue);
+}
+
+.btn_content .icon_arrow {
+  transition: 0.5s;
+  margin-right: 0px;
+  transform: scale(0.6);
+}
+
+.btn_content:hover .icon_arrow {
+  transition: 0.5s;
+  margin-right: 25px;
+}
+
+.icon_arrow {
+  width: 20px;
+  margin-left: 15px;
+  position: relative;
+  top: 6%;
+}
+  
+/* SVG */
+#arrow-icon-one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.btn_content:hover #arrow-icon-three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.btn_content:hover #arrow-icon-one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.btn_content:hover #arrow-icon-two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: var(--hamu-primary-blue);
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+/* Button animations */
+@-webkit-keyframes btn_content {
+  0% {
+    outline: 0.2em solid var(--hamu-primary-blue);
+    outline-offset: 0;
+  }
+}
+
+@keyframes btn_content {
+  0% {
+    outline: 0.2em solid var(--hamu-primary-blue);
+    outline-offset: 0;
+  }
+}
